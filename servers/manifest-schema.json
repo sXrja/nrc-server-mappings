@@ -34,13 +34,13 @@
       "patternProperties": {
         "^[a-zA-Z0-9_-]+$": {
           "type": "object",
-          "required": ["versions", "description"],
+          "required": ["versions", "name"],
           "properties": {
             "versions": {
               "oneOf": [
                 {
                   "type": "string",
-                  "pattern": "^\\d+\\.\\d+$"
+                  "pattern": "^.+$"
                 },
                 {
                   "type": "array",
@@ -55,6 +55,11 @@
             "description": {
               "type": "string",
               "description": "Description of the gamemode",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "description": "A nice name for the gamemode",
               "minLength": 1
             }
           },
