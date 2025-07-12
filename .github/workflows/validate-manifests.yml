@@ -1,0 +1,30 @@
+name: Validate Server Manifests
+
+on:
+  push:
+    paths:
+      - 'servers/**/manifest.json'
+  pull_request:
+    paths:
+      - 'servers/**/manifest.json'
+
+jobs:
+  validate-manifests:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+
+        
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Validate manifests
+        run: npm run validate 

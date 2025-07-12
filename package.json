@@ -1,0 +1,15 @@
+{
+  "name": "nrc-server-mappings",
+  "version": "1.0.0",
+  "description": "Server manifest validation and management",
+  "scripts": {
+    "validate": "node scripts/validate-manifests.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 

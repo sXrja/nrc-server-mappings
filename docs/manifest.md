@@ -1,0 +1,284 @@
+## 📋 How to Create a Server Manifest
+
+This guide explains how to create a proper `manifest.json` file for your Minecraft server. All manifests must follow the schema defined in `servers/manifest-schema.json`.
+
+###  File Structure
+
+Create your server directory like this:
+```
+servers/
+├── your-server-name/
+│   ├── manifest.json
+│   ├── icon.png
+│   └── bg.png
+```
+
+###  Basic Manifest Structure
+
+```json
+{
+  "server-address": ["your-server.com"],
+  "pretty-name": "Your Server Name",
+  "categorys": ["SURVIVAL"],
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  }
+}
+```
+
+##  Required Fields
+
+| Field | Type | Description | Example |
+|-------|------|-------------|---------|
+| `server-address` | Array of strings | Server addresses/domains | `["play.example.com", "mc.example.com"]` |
+| `pretty-name` | String | Display name for the server | `"Epic Survival Server"` |
+| `categorys` | Array of strings | Server categories (see table below) | `["SURVIVAL", "PVP"]` |
+| `assets` | Object | Server images (see assets table) | `{"icon": "./icon.png", "background": "./bg.png"}` |
+
+##  Available Categories
+
+| Category | Description | Use Case |
+|----------|-------------|----------|
+| `HG` | Hunger Games | Battle Royale style servers |
+| `PVP` | Player vs Player | Combat-focused servers |
+| `SURVIVAL` | Survival Mode | Classic survival gameplay |
+| `CREATIVE` | Creative Mode | Building and creation servers |
+| `MINIGAMES` | Mini Games | Various small game modes |
+| `SKYBLOCK` | SkyBlock | Island survival challenges |
+| `PRISON` | Prison | Progression-based prison servers |
+| `FACTIONS` | Factions | Team-based warfare |
+| `SKYWARS` | SkyWars | Air combat battles |
+| `BEDWARS` | BedWars | Bed destruction game |
+| `UHC` | Ultra Hardcore | Hardcore survival challenges |
+| `KITPVP` | Kit PvP | Pre-equipped combat |
+| `ANARCHY` | Anarchy | No rules servers |
+| `RPG` | Role Playing Game | Story-driven gameplay |
+| `ADVENTURE` | Adventure | Exploration servers |
+| `BUILD` | Building | Construction-focused |
+| `TECHNICAL` | Technical | Redstone and mechanics |
+| `VANILLA` | Vanilla | Unmodified Minecraft |
+| `MODDED` | Modded | Custom mods and plugins |
+| `CUSTOM` | Custom | Unique game modes |
+
+## Gamemodes (Optional)
+
+Add detailed gamemode information:
+
+```json
+{
+  "gamemodes": {
+    "survival": {
+      "versions": ["1.19.2", "1.20.1"],
+      "description": "Classic survival gameplay with economy"
+    },
+    "creative": {
+      "versions": "1.20.1",
+      "description": "Unlimited building and creation"
+    }
+  }
+}
+```
+
+### Gamemode Field Details
+
+| Field | Type | Description | Example |
+|-------|------|-------------|---------|
+| `versions` | String or Array | Supported Minecraft versions | `"1.20.1"` or `["1.19.2", "1.20.1"]` |
+| `description` | String | Brief description of the gamemode | `"Classic survival with economy"` |
+
+##  Social Links (Optional)
+
+Connect your social media and external links:
+
+```json
+{
+  "socials": {
+    "website": "https://yourserver.com",
+    "store": "https://store.yourserver.com",
+    "youtube": "https://youtube.com/@yourserver",
+    "instagram": "https://instagram.com/yourserver",
+    "tiktok": "https://tiktok.com/@yourserver",
+    "x": "https://x.com/yourserver",
+    "discord": "https://discord.gg/yourserver",
+    "teamspeak": "https://teamspeak.com/yourserver"
+  }
+}
+```
+
+### Social Links Field Details
+
+| Field | Type | Description | Example |
+|-------|------|-------------|---------|
+| `website` | URL | Official website | `"https://yourserver.com"` |
+| `store` | URL | Store/Donation page | `"https://store.yourserver.com"` |
+| `youtube` | URL | YouTube channel | `"https://youtube.com/@yourserver"` |
+| `instagram` | URL | Instagram profile | `"https://instagram.com/yourserver"` |
+| `tiktok` | URL | TikTok profile | `"https://tiktok.com/@yourserver"` |
+| `x` | URL | X (Twitter) profile | `"https://x.com/yourserver"` |
+| `discord` | URL | Discord server invite | `"https://discord.gg/yourserver"` |
+| `teamspeak` | URL | TeamSpeak server | `"https://teamspeak.com/yourserver"` |
+
+##  Assets
+
+Required image files for your server:
+
+```json
+{
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  }
+}
+```
+
+### Asset Requirements
+
+| Field | Type | Description | File Requirements |
+|-------|------|-------------|-------------------|
+| `icon` | String | Server icon image | PNG, JPG, JPEG, GIF, or SVG |
+| `background` | String | Server background image | PNG, JPG, JPEG, GIF, or SVG |
+
+**File Path Rules:**
+- Must start with `./` (relative to manifest.json)
+- Supported formats: `.png`, `.jpg`, `.jpeg`, `.gif`, `.svg`
+- Files must actually exist in the specified location
+
+##  Disabled Modules (Optional)
+
+Specify which client modules are disabled on your server:
+
+```json
+{
+  "disabled-modules": [
+    "FOV_CHANGER",
+    "FULL_BRIGHT_MODULE",
+    "ZOOM_MODULE"
+  ]
+}
+```
+
+### Available Disabled Modules
+
+| Module | Description | Why Disable |
+|--------|-------------|-------------|
+| `FOV_CHANGER` | Field of View modifications | Prevents unfair visual advantages |
+| `FULL_BRIGHT_MODULE` | Full brightness/gamma | Prevents night vision exploits |
+| `ZOOM_MODULE` | Zoom functionality | Prevents unfair targeting |
+| `FREE_LOOK_MODULE` | Free look camera | Prevents third-person exploits |
+| `NO_FOG_MODULE` | Fog removal | Prevents visibility exploits |
+| `ARROW_TRAIL` | Arrow trail effects | Prevents visual clutter |
+| `PACK_TWEAKS` | Resource pack modifications | Ensures fair gameplay |
+| `ITEM_MODEL` | Custom item models | Prevents visual confusion |
+| `AUTO_TEXT` | Automatic text input | Prevents spam/automation |
+| `ITEM_HIGHLIGHTER` | Item highlighting | Prevents unfair advantages |
+| `TNT_TIMER` | TNT timer displays | Prevents timing exploits |
+| `WEATHER_CHANGER` | Weather modifications | Prevents visual exploits |
+| `TIME_CHANGER` | Time modifications | Prevents visual exploits |
+
+##  Complete Example
+
+Here's a complete example of a valid manifest.json:
+
+```json
+{
+  "server-address": ["play.example.com", "mc.example.com"],
+  "pretty-name": "Epic Survival Network",
+  "categorys": ["SURVIVAL", "PVP", "MINIGAMES"],
+  "gamemodes": {
+    "survival": {
+      "versions": ["1.19.2", "1.20.1"],
+      "description": "Classic survival with economy and factions"
+    },
+    "skywars": {
+      "versions": "1.20.1",
+      "description": "Fast-paced PvP battles in the sky"
+    },
+    "creative": {
+      "versions": ["1.19.2", "1.20.1"],
+      "description": "Unlimited building and creation"
+    }
+  },
+  "socials": {
+    "website": "https://example.com",
+    "store": "https://store.example.com",
+    "discord": "https://discord.gg/example",
+    "youtube": "https://youtube.com/@exampleserver"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  },
+  "disabled-modules": [
+    "FOV_CHANGER",
+    "FULL_BRIGHT_MODULE",
+    "ZOOM_MODULE"
+  ]
+}
+```
+
+##  Validation
+
+### Local Testing
+
+Test your manifest before submitting:
+
+```bash
+# Install dependencies
+npm install
+
+# Validate your manifest
+npm run validate
+```
+
+### GitHub Actions
+
+Manifests are automatically validated when you:
+- Push changes to the repository
+- Create a pull request
+
+The validation checks:
+- ✅ JSON structure and syntax
+- ✅ Required fields are present
+- ✅ Asset files exist
+- ✅ URLs are valid
+- ✅ Categories are valid
+- ✅ Data types are correct
+
+##  Getting Started
+
+1. **Create your server directory:**
+   ```bash
+   mkdir servers/your-server-name
+   cd servers/your-server-name
+   ```
+
+2. **Add your images:**
+   - `icon.png` (recommended: 64x64 or 128x128)
+   - `bg.png` (recommended: 1920x1080 or similar)
+
+3. **Create manifest.json:**
+   - Copy the basic structure above
+   - Fill in your server details
+   - Test with `npm run validate`
+
+4. **Submit your changes:**
+   - Create a pull request
+   - GitHub Actions will validate automatically
+
+##  Common Issues
+
+| Error | Cause | Solution |
+|-------|-------|----------|
+| `"server-address" is required` | Missing server addresses | Add your server domains |
+| `"assets.icon" is required` | Missing icon file | Add icon.png to your directory |
+| `"assets.background" is required` | Missing background file | Add bg.png to your directory |
+| `Invalid category` | Unknown category | Use one from the categories table |
+| `File not found` | Asset files missing | Ensure icon.png and bg.png exist |
+| `Invalid URI format` | Bad URL format | Use proper URLs starting with `https://` |
+
+##  Need Help?
+
+- Check the [schema file](servers/manifest-schema.json) for technical details
+- Run `npm run validate` to test your manifest
+- Look at existing server examples in the `servers/` directory
