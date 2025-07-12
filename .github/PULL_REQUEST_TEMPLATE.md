@@ -7,7 +7,7 @@ Before submitting this pull request, please confirm that you have completed the 
 - [ ] I have read and followed the [manifest.md](../docs/manifest.md) guide
 
 ###  Asset Requirements
-- [ ] My server has an `icon.png` file (64x64 to 520x520 pixels, must be square)
+- [ ] My server has an `icon.png` file (64x64 to 512x512 pixels, must be square)
 - [ ] My server has a `background.png` file (1920x1080 pixels)
 - [ ] Both image files are in PNG format
 - [ ] Image files are properly referenced in the manifest.json (paths start with `./`)

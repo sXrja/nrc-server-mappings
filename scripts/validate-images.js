@@ -41,8 +41,8 @@ function validateIconDimensions(filePath) {
   try {
     const dimensions = getImageDimensions(filePath);
     
-    if (dimensions.width >= 64 && dimensions.width <= 520 && 
-        dimensions.height >= 64 && dimensions.height <= 520 &&
+    if (dimensions.width >= 64 && dimensions.width <= 512 && 
+        dimensions.height >= 64 && dimensions.height <= 512 &&
         dimensions.width === dimensions.height) {
       console.log(`✅ Icon dimensions are correct: ${dimensions.width}x${dimensions.height}`);
       return true;
