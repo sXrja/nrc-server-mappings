@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 
@@ -99,7 +101,6 @@ function processAssets(manifest, folderName, sourceFolderPath, outputDir) {
             }
         }
 
-        // Process background
         if (manifest.assets.background) {
             const bgSource = path.join(sourceFolderPath, manifest.assets.background.replace('./', ''));
             const bgDest = path.join(assetsDir, 'background.png');
