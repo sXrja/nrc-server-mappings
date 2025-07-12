@@ -1,30 +1,25 @@
 {
-    "server-address":[
-        "hglabor.de"
-    ],
-
-    "pretty-name": "HGLabor",
-
-    "categorys": [
-        "HG",
-        "PVP"
-    ],
-
-    "gamemodes": { 
-        "Lobby": {
-            "versions": "1.8",
-            "description": "Hi"
-        }
-    },
-
-    "socials": {
-        "website": "https://norisk.gg"
-    },
-
-    "assets": {
-        "icon": "./icon.png",
-        "background": "./bg.png"
-    },
-
-    "disabled-modules":[]    
+  "server-address": [
+    "hglabor.de"
+  ],
+  "pretty-name": "HGLabor",
+  "categorys": [
+    "HG",
+    "PVP"
+  ],
+  "gamemodes": {
+    "lobby": {
+      "name": "Lobby",
+      "versions": "1.8",
+      "description": "Hi"
+    }
+  },
+  "socials": {
+    "website": "https://norisk.gg"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  },
+  "disabled-modules": []
 }
