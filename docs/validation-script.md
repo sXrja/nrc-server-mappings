@@ -33,3 +33,41 @@ When adding a new server:
 4. Optionally add a local `manifest-schema.json` for custom validation rules
 
 The validation will run automatically on pull requests and pushes.
+
+## Manifest Merging
+
+The repository includes a merge script that combines all individual server manifests into a unified manifest file.
+
+### Running the Merge Script
+
+```bash
+# Merge all manifests
+node scripts/merge-manifests.js
+```
+
+### Merge Process
+
+The merge script will:
+
+1. **Scan all server directories** in `servers/`
+2. **Read and validate** each `manifest.json` file
+3. **Copy assets** to `merged/assets/[server-id]/`
+4. **Update asset paths** to reflect the new structure
+5. **Create merged manifest** at `merged/merged-manifest.json`
+6. **Validate the result** against the schema
+
+### Merge Output
+
+The merged manifest includes:
+- All server data organized under `servers` object
+- Metadata about the merge process
+- Copied assets with updated paths
+- Validation results and error reporting
+
+### Merge Validation
+
+The merged manifest is automatically validated to ensure:
+- All required fields are present
+- Asset files exist and are accessible
+- JSON structure is valid
+- No duplicate server IDs exist

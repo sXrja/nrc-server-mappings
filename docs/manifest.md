@@ -245,6 +245,60 @@ The validation checks:
 - ✅ Categories are valid
 - ✅ Data types are correct
 
+##  Merged Manifest Format
+
+When all server manifests are merged together, they create a unified manifest with the following structure:
+
+```json
+{
+  "servers": {
+    "server-id": {
+      "server-address": ["server.com"],
+      "pretty-name": "Server Name",
+      "categorys": ["SURVIVAL"],
+      "gamemodes": {
+        "gamemode-name": {
+          "versions": "1.20.1",
+          "description": "Description"
+        }
+      },
+      "socials": {
+        "website": "https://server.com"
+      },
+      "assets": {
+        "icon": "./assets/server-id/icon.png",
+        "background": "./assets/server-id/background.png"
+      },
+      "disabled-modules": []
+    }
+  },
+  "metadata": {
+    "totalServers": 1,
+    "mergedAt": "2024-01-01T12:00:00.000Z",
+    "sourceFolders": ["server-id"]
+  }
+}
+```
+
+### Merged Manifest Structure
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `servers` | Object | All server manifests keyed by server ID |
+| `servers[server-id]` | Object | Individual server manifest data |
+| `metadata` | Object | Information about the merge process |
+| `metadata.totalServers` | Number | Total number of servers processed |
+| `metadata.mergedAt` | String | ISO timestamp of merge |
+| `metadata.sourceFolders` | Array | List of source folder names |
+
+### Asset Paths in Merged Manifest
+
+In the merged manifest, asset paths are updated to reflect the new structure:
+- Original: `"./icon.png"`
+- Merged: `"./assets/server-id/icon.png"`
+
+All assets are copied to the `merged/assets/` directory during the merge process.
+
 ##  Getting Started
 
 1. **Create your server directory:**
