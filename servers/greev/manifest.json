@@ -131,10 +131,10 @@
     },
     "socials": {
         "website": "https://greev.eu",
-        "x": "greeveu",
-        "instagram": "greev.eu",
+        "x": "https://x.com/greeveu",
+        "instagram": "https://instgram.com/greev.eu",
         "discord": "https://discord.com/invite/taAbPpq",
-        "teamspeak": "ts.greev.eu"
+        "teamspeak": "ts3://ts.greev.eu"
     },
     "assets": {
         "icon": "./icon.png",
