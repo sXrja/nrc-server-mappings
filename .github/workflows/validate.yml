@@ -1,6 +1,11 @@
 name: Validate Server Manifests and Images
 
 on:
+  push:
+    paths:
+      - 'servers/**/*.png'
+      - 'servers/**/manifest.json'
+
   pull_request:
     paths:
       - 'servers/**/*.png'
