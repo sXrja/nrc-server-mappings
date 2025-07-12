@@ -12,7 +12,7 @@ on:
       - 'servers/**/manifest.json'
 
 jobs:
-  validate-all:
+  validate:
     runs-on: ubuntu-latest
     
     steps:
