@@ -40,3 +40,4 @@ jobs:
           tag_name: release-${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
