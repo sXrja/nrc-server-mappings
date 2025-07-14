@@ -2,6 +2,8 @@ name: Validate Server Manifests and Images
 
 on:
   push:
+    branches:
+      - main  
     paths:
       - 'servers/**/*.png'
       - 'servers/**/manifest.json'
