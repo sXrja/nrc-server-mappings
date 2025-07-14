@@ -2,8 +2,8 @@ name: Merge and Release
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 jobs:
   build-and-release:
@@ -26,9 +26,17 @@ jobs:
       - name: Zip merged directory
         run: zip -r merged.zip merged
 
+      - name: Create tag
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git tag "auto-$(date +'%Y%m%d%H%M%S')"
+          git push origin --tags
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: merged.zip
+          tag_name: ${{ github.sha }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
