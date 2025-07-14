@@ -2,6 +2,8 @@ name: Merge and Release
 
 on:
   push:
+    branches:
+        - main  
     tags:
       - 'v*'
 
