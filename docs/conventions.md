@@ -35,4 +35,11 @@ This document describes the conventions for images used in server manifests, spe
 
 ---
 
+## 7. Website and Minecraft
+- The area with the white overlay and without it will be rendered inside of a website (if its exist at the state of time)
+- The are without the white overlay and the Minecraft text is rendered inside of Minecraft Java Edition
+
+![example](assets/example.png)
+
 For questions or updates to these conventions, please update this document and notify contributors.
+
