@@ -11,8 +11,8 @@
   "gamemodes": {
     "lobby": {
       "name": "Lobby",
-      "versions": "1.8",
-      "description": "Hi"
+      "versions": "1.21",
+      "description": "Coole Lobby"
     }
   },
   "socials": {
