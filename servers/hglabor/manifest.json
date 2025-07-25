@@ -22,5 +22,5 @@
     "icon": "./icon.png",
     "background": "./bg.png"
   },
-  "disabled-modules": []
+  "disabled-modules": ["FOV_CHANGER"]
 }
