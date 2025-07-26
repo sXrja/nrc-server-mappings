@@ -23,3 +23,7 @@ This repository provides server mappings for the NRC client, allowing servers to
 
 ---
 For more details, see the documentation in the `docs/` directory.
+
+## Ingame looks
+
+![readme exmaple](docs/assets/readme_example.png)
