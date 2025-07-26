@@ -1,0 +1,43 @@
+{
+    "server-address":[
+        "WildSMP.de",
+        "WildSMP.eu",
+        "JustGino.de"
+    ],
+
+    "pretty-name": "WildSMP.de",
+
+    "categorys": [
+        "SURVIVAL",
+        "ADVENTURE",
+        "CUSTOM",
+        "BUILD"
+    ],
+
+    "gamemodes": {
+        "smp": {
+            "name": "SMP",
+            "versions": ">1.21.7"
+        }
+    },
+
+    "socials": {
+        "store": "https://store.wildsmp.de",
+        "wiki": "https://wildsmp-de.gitbook.io/wildsmp-wiki",
+        "twitch": "https://www.twitch.tv/justginoo",
+        "discord": "https://discord.gg/wildsmp",
+        "tiktok": "https://tiktok.com/@wildsmp.de",
+        "youtube": "https://www.youtube.com/@WildSMP_de"
+    },
+
+    "assets": {
+        "icon": "./icon.png",
+        "background": "./bg.png"
+    },
+    
+    "disabled-modules": [
+        "NO_FOG_MODULE",
+        "WEATHER_CHANGER",
+        "TIME_CHANGER"
+    ]
+}
