@@ -1,5 +1,9 @@
 {
-    "server-address": ["cutecraft.net"],
+    "server-address": [
+        "cutecraft.net",
+        "dev.cutecraft.net",
+        "build.cutecraft.net"
+    ],
     "pretty-name": "CuteCraft",
     "categorys": ["CITYBUILD"],
     "gamemodes": {
