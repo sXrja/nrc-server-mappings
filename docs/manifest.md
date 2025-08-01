@@ -176,6 +176,19 @@ Specify which client modules are disabled on your server:
 | `WEATHER_CHANGER` | Weather modifications | Prevents visual exploits |
 | `TIME_CHANGER` | Time modifications | Prevents visual exploits |
 
+Important Note:
+If a module is not available per enum can enter it as a string like this:
+
+```json
+{
+  "disabled-modules": [
+    "FovChanger"
+  ]
+}
+```
+
+If you have a valid reason to disable the Module your Pull Request will still be merged!
+
 ##  Complete Example
 
 Here's a complete example of a valid manifest.json:
