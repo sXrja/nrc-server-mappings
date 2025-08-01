@@ -89,9 +89,9 @@
     },
     "disabled-modules": [
         "FOV_CHANGER",
-        "FREE_LOOK_MODULE",
+        "FREE_LOOK",
         "TNT_TIMER",
-        "NO_FOG_MODULE",
-        "FULL_BRIGHT_MODULE"
+        "NO_FOG",
+        "FULL_BRIGHT"
       ]
   }

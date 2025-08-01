@@ -21,6 +21,5 @@
   "assets": {
     "icon": "./icon.png",
     "background": "./bg.png"
-  },
-  "disabled-modules": ["FOV_CHANGER"]
+  }
 }

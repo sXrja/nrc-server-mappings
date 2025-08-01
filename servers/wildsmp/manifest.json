@@ -30,7 +30,7 @@
     "background": "./bg.png"
   },
   "disabled-modules": [
-    "NO_FOG_MODULE",
+    "NO_FOG",
     "WEATHER_CHANGER",
     "TIME_CHANGER"
   ]
