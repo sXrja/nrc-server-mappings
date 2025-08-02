@@ -90,8 +90,6 @@
     "disabled-modules": [
         "FOV_CHANGER",
         "FREE_LOOK",
-        "TNT_TIMER",
-        "NO_FOG",
-        "FULL_BRIGHT"
+        "TNT_TIMER"
       ]
   }
