@@ -153,7 +153,8 @@
               "ITEM_HIGHLIGHTER",
               "TNT_TIMER",
               "WEATHER_CHANGER",
-              "TIME_CHANGER"
+              "TIME_CHANGER",
+              "HEALTH_INDICATOR"
             ]
           },
           {
