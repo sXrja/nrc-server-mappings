@@ -1,0 +1,86 @@
+{
+  "server-address": [
+    "mc.cytooxien.de",
+    "%.cytooxien.de",
+    "%.cytooxien.net"
+  ],
+  "pretty-name": "Cytooxien",
+  "categorys": [
+    "MINIGAMES",
+    "SKYBLOCK",
+    "CITYBUILD",
+    "FACTIONS",
+    "CREATIVE"
+  ],
+  "gamemodes": {
+    "onlyup": {
+      "name": "Only Up!",
+      "versions": "1.19<*"
+    },
+    "skyblock": {
+      "name": "Skyblock",
+      "versions": "1.19<*"
+    },
+    "reallife": {
+      "name": "Reallife",
+      "versions": "1.19<*"
+    },
+    "citybuild": {
+      "name": "Citybuild",
+      "versions": "1.19<*"
+    },
+    "factions": {
+      "name": "Factions",
+      "versions": "1.19<*"
+    },
+    "realms": {
+      "name": "Realms",
+      "versions": "1.19<*"
+    },
+    "minecraftparty": {
+      "name": "Minecraft Party",
+      "versions": "1.19<*"
+    },
+    "heroes": {
+      "name": "Heroes",
+      "versions": "1.19<*"
+    },
+    "timejump": {
+      "name": "Timejump",
+      "versions": "1.19<*"
+    },
+    "smash": {
+      "name": "Smash",
+      "versions": "1.19<*"
+    },
+    "bedwars": {
+      "name": "Bedwars",
+      "versions": "1.19<*"
+    },
+    "ultimateknockout": {
+      "name": "Ultimate Knockout",
+      "versions": "1.19<*"
+    },
+    "creative": {
+      "name": "Creative",
+      "versions": "1.19<*"
+    }
+  },
+  "socials": {
+    "website": "https://www.cytooxien.de",
+    "store": "https://shop.cytooxien.de",
+    "x": "https://twitter.com/Cytooxien",
+    "discord": "https://cxn.link/discord",
+    "teamspeak": "ts.cytooxien.de"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  },
+  "disabled-modules": [
+    "FOV_CHANGER",
+    "FREE_LOOK",
+    "TNT_TIMER",
+    "HEALTH_INDICATORS"
+  ]
+}
