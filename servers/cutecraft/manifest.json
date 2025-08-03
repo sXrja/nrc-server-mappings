@@ -1,15 +1,14 @@
 {
     "server-address": [
         "cutecraft.net",
-        "dev.cutecraft.net",
-        "build.cutecraft.net"
+        "dev.cutecraft.net"
     ],
     "pretty-name": "CuteCraft",
     "categorys": ["CITYBUILD"],
     "gamemodes": {
       "citybuild1": {
         "name": "CityBuild",
-        "versions": "1.21.5<*"
+        "versions": "1.21.7<*"
       }
     },
     "socials": {
