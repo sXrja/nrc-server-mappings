@@ -1,8 +1,8 @@
 {
   "server-address": [
-    "mc.cytooxien.de",
-    "%.cytooxien.de",
-    "%.cytooxien.net"
+    "cytooxien.net",
+    "cytooxien.de",
+    "mc.cytooxien.de"
   ],
   "pretty-name": "Cytooxien",
   "categorys": [
