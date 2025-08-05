@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'servers/**/*.png'
+      - 'servers/**/manifest.json'
 
 jobs:
   build-and-release:
