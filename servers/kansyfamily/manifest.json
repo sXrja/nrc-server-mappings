@@ -31,5 +31,11 @@
     "assets": {
         "icon": "./icon.png",
         "background": "./bg.png"
-    }
+    },
+    "disabled-modules": [
+    "FOV_CHANGER",
+    "FREE_LOOK",
+    "TNT_TIMER",
+    "HEALTH_INDICATORS"
+  ]
 }
