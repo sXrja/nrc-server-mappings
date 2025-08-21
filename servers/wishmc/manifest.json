@@ -1,0 +1,33 @@
+{
+  "server-address": [
+    "wishmc.net",
+    "events.wishmc.net",
+    "attack.wishmc.net"
+  ],
+  "pretty-name": "WishMC",
+  "categorys": [
+    "MINIGAMES",
+    "SURVIVAL"
+  ],
+  "gamemodes": {
+    "lasertag": {
+      "name": "Lasertag",
+      "versions": ">1.21"
+    },
+    "wishattack": {
+      "name": "Wish Attack 4",
+      "versions": ">1.21"
+    }
+  },
+  "socials": {
+    "website": "https://wishmc.net",
+    "discord": "https://wishmc.net/discord",
+    "youtube": "https://youtube.com/@wishmcnet",
+    "instagram": "https://instagram.com/wishmcnet"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  },
+  "disabled-modules": []
+}
