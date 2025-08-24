@@ -1,0 +1,29 @@
+{
+  "server-address": [
+    "lunexmc.net",
+    "lunexmc.de",
+  ],
+  "pretty-name": "LunexMC",
+  "categorys": [
+    "CITYBUILD",
+    "SURVIVAL"
+  ],
+  "gamemodes": {
+    "citybuild": {
+      "name": "CITYBUILD",
+      "versions": ">1.21"
+    },
+    "survival": {
+      "name": "SURVIVAL",
+      "versions": ">1.21"
+    }
+  },
+  "socials": {
+    "website": "https://www.lunexmc.net",
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  },
+  "disabled-modules": []
+}
