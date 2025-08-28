@@ -1,0 +1,45 @@
+{
+  "server-address": [
+    "melvin501.de",
+    "mc.melvin501.de",
+    "play.melvin501.de"
+  ],
+  "pretty-name": "Melvin501",
+  "categorys": [
+    "MINIGAMES",
+    "SURVIVAL"
+  ],
+  "gamemodes": {
+    "allegegenmelvin": {
+      "name": "AlleGegenMelvin"
+    },
+    "allegegenalle2": {
+      "name": "AlleGegenAlleV2"
+    },
+    "fangen": {
+      "name": "Fangen"
+    },
+    "getdown": {
+      "name": "GetDown"
+    },
+    "oneblockrace": {
+      "name": "OneBlockRace"
+    },
+    "speedrun": {
+      "name": "Speedrun"
+    },
+    "manhunt": {
+      "name": "ManHunt"
+    }
+  },
+  "socials": {
+    "website": "https://www.melvin501.de",
+    "youtube": "https://melvin501.de/yt",
+    "discord": "https://melvin501.de/dc",
+    "tiktok": "https://melvin501.de/tiktok"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  }
+}
