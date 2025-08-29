@@ -20,7 +20,6 @@
       "background": "./bg.png"
     },
     "disabled-modules": [
-        "FREE_LOOK",
-        "HEALTH_INDICATORS"
+        "FREE_LOOK"
       ]
   }
