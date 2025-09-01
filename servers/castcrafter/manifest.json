@@ -1,0 +1,43 @@
+{
+  "server-address": [
+    "castcrafter.de",
+    "play.castcrafter.de",
+    "server.castcrafter.de"
+  ],
+  "pretty-name": "CASTCRAFTER.DE",
+  "categorys": [
+    "SURVIVAL",
+    "CREATIVE",
+    "ADVENTURE",
+    "BUILD",
+    "TECHNICAL",
+    "VANILLA",
+    "MODDED"
+  ],
+  "gamemodes": {
+    "events": {
+      "name": "100+ Spieler Events",
+      "versions": "1.21.7<*"
+    },
+    "survival": {
+      "name": "Survival Server",
+      "versions": "1.21.7<*"
+    }
+  },
+  "socials": {
+    "website": "https://server.castcrafter.de/",
+    "youtube": "https://www.youtube.com/@CastCrafter",
+    "instagram": "https://www.instagram.com/castagram_/",
+    "tiktok": "https://www.tiktok.com/@castcrafter",
+    "x": "https://x.com/castcrafter",
+    "discord": "https://discord.gg/castcrafter"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  },
+  "disabled-modules": [
+    "HEALTH_INDICATORS",
+    "ITEM_MODEL"
+  ]
+}
