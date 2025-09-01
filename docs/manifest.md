@@ -117,7 +117,7 @@ Connect your social media and external links:
 | `tiktok` | URL | TikTok profile | `"https://tiktok.com/@yourserver"` |
 | `x` | URL | X (Twitter) profile | `"https://x.com/yourserver"` |
 | `discord` | URL | Discord server invite | `"https://discord.gg/yourserver"` |
-| `teamspeak` | URL | TeamSpeak server | `"https://teamspeak.com/yourserver"` |
+| `teamspeak` | URL | TeamSpeak server | `"ts3://teamspeak.com/yourserver"` |
 
 ##  Assets
 

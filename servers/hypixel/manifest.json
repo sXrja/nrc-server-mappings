@@ -124,7 +124,7 @@
       "instagram": "https://instagram.com/hypixelofficial",
       "x": "https://x.com/HypixelNetwork",
       "discord": "https://discord.com/invite/hypixel",
-      "teamspeak": "https://ts.hypixel.net"
+      "teamspeak": "ts3://ts.hypixel.net"
     },
     "assets": {
       "icon": "./icon.png",
