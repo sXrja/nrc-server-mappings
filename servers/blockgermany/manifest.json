@@ -1,32 +1,28 @@
 {
-  "server-address": [
-    "blockgermany.de",
-  ],
-  "pretty-name": "Cytooxien",
-  "categorys": [
-    "PVP",
-    "SURVIVAL",
-    "CITYBUILD",
-  ],
-  "citybuild": {
-    "onlyup": {
-      "name": "Citybuild",
-      "versions": "1.21<*"
-    },
-    "smp": {
-      "name": "SMP",
-      "versions": "1.21<*"
-    },
-    "pvp": {
-      "name": "PVP",
-      "versions": "1.21<*"
-    },
-  },
-  "socials": {
-    "website": "https://www.blockgermany.de",
-  },
+  "server-address": ["blockgermany"],
+  "pretty-name": "BlockGermany",
+  "categorys": ["SURVIVAL", "CITYBUILD"],
   "assets": {
     "icon": "./icon.png",
     "background": "./bg.png"
   },
+  "gamemodes": {
+    "smp": {
+      "name": "SMP",
+      "versions": "1.21.1<",
+      "description": "Survival mit Aufgaben!"
+    },
+    "citybuild": {
+      "name": "Unendliche Treppe",
+      "versions": "1.20.4<",
+      "description": "Baue dein eigenes Grundstück und habe Spaß"
+    }
+  },
+  "socials": {
+    "website": "https://blockgermany.de",
+    "youtube": "https://youtube.com/@BlockGermanyDE",
+    "tiktok": "https://tiktok.com/@blockgermany.de",
+    "discord": "https://discord.gg/ApTAGtHsvj"
+  },
+  "disabled-modules": ["FULL_BRIGHT_MODULE", "WEATHER_CHANGER", "TIME_CHANGER"]
 }
