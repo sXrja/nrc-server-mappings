@@ -1,7 +1,7 @@
 {
   "server-address": ["blockgermany"],
   "pretty-name": "BlockGermany",
-  "categorys": ["SURVIVAL", "CITYBUILD"],
+  "categorys": ["SURVIVAL", "CITYBUILD", "PVP"],
   "assets": {
     "icon": "./icon.png",
     "background": "./bg.png"
@@ -12,8 +12,13 @@
       "versions": "1.21.1<",
       "description": "Survival mit Aufgaben!"
     },
+    "pvp": {
+      "name": "PVP",
+      "versions": "1.21.1<",
+      "description": "Spiele PvP und trainiere dich"
+    },
     "citybuild": {
-      "name": "Unendliche Treppe",
+      "name": "Citybuild",
       "versions": "1.20.4<",
       "description": "Baue dein eigenes Grundstück und habe Spaß"
     }
