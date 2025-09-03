@@ -1,0 +1,29 @@
+{
+  "server-address": ["blockgermany.de"],
+  "pretty-name": "BlockGermany",
+  "categorys": ["CITYBUILD", "PVP", "SURVIVAL"],
+  "gamemodes": {
+    "Citybuild": {
+      "name": "Citybuild",
+      "versions": "1.21 -> 1.21.8",
+      "description": "Baue deinen eigenen Grundstück!"
+    },
+    "PvP": {
+      "name": "PvP",
+      "versions": "1.21 -> 1.21.8",
+      "description": "Spiele Survival mit coolen extra Features"
+    },
+    "Survival": {
+      "name": "Survival",
+      "versions": "1.21 -> 1.21.8",
+      "description": "Spiele PvP und trainiere dich"
+    }
+  },
+  "socials": {
+    "website": "https://www.blockgermany.de"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  }
+}
