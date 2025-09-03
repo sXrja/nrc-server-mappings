@@ -1,0 +1,61 @@
+{
+  "server-address": [
+    "mccisland.net",
+    "play.mccisland.net"
+  ],
+  "pretty-name": "MCC Island",
+  "categorys": [
+    "MINIGAMES",
+    "PVP",
+    "CUSTOM"
+  ],
+  "gamemodes": {
+    "skybattle": {
+      "name": "Sky Battle",
+      "versions": ">1.21",
+      "description": "Battle with other competitors to be the last player standing! Use your infinite blocks to move quickly and claim victory."
+    },
+    "battlebox": {
+      "name": "Battle Box",
+      "versions": ">1.21",
+      "description": "Fight with your friends as a team of 4 against rival teams! Select special gear each round and fill the central area with your team's concrete faster than your competition!"
+    },
+    "dynaball": {
+      "name": "Dynaball",
+      "versions": ">1.21",
+      "description": "An explosive team-based game where players work together to destroy the enemy's base while rebuilding their own!"
+    },
+    "holeinthewall": {
+      "name": "Hole in the Wall",
+      "versions": ">1.21",
+      "description": "Jump over and through walls of slime without being pushed off the platform! Compete against others to last the longest!"
+    },
+    "gttos": {
+      "name": "Get to the other Side",
+      "versions": ">1.21",
+      "description": "Race to the other side and whack a chicken faster than other players! This game is played over 3 rounds on 3 different maps."
+    },
+    "parkour_warrior_dojo": {
+      "name": "Parkour Warrior Dojo",
+      "versions": ">1.21",
+      "description": "Train and compete on a variety of parkour courses to earn medals and improve your times. Features both Monthly and Daily rotations to keep things fresh!"
+    },
+    "parkour_warrior_survivor": {
+      "name": "Parkour Warrior Survivor",
+      "versions": ">1.21",
+      "description": "Challenge other players in a high-stakes Parkour Race, where you must avoid getting eliminated to win."
+    }
+  },
+  "socials": {
+    "website": "https://mcchampionship.com/island/",
+    "discord": "https://discord.com/invite/mcc",
+    "youtube": "https://www.youtube.com/@Noxcrew",
+    "x": "https://bsky.app/profile/noxcrew.com",
+    "store": "https://store.mccisland.net/"
+  },
+  "assets": {
+    "icon": "./icon.png",
+    "background": "./bg.png"
+  },
+  "disabled-modules": []
+}
