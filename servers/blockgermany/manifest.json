@@ -1,29 +1,32 @@
 {
-  "server-address": ["blockgermany.de"],
-  "pretty-name": "BlockGermany",
-  "categorys": ["CITYBUILD", "PVP", "SURVIVAL"],
-  "gamemodes": {
-    "Citybuild": {
+  "server-address": [
+    "blockgermany.de",
+  ],
+  "pretty-name": "Cytooxien",
+  "categorys": [
+    "PVP",
+    "SURVIVAL",
+    "CITYBUILD",
+  ],
+  "citybuild": {
+    "onlyup": {
       "name": "Citybuild",
-      "versions": "1.21 -> 1.21.8",
-      "description": "Baue deinen eigenen Grundstück!"
+      "versions": "1.21<*"
     },
-    "PvP": {
-      "name": "PvP",
-      "versions": "1.21 -> 1.21.8",
-      "description": "Spiele Survival mit coolen extra Features"
+    "smp": {
+      "name": "SMP",
+      "versions": "1.21<*"
     },
-    "Survival": {
-      "name": "Survival",
-      "versions": "1.21 -> 1.21.8",
-      "description": "Spiele PvP und trainiere dich"
-    }
+    "pvp": {
+      "name": "PVP",
+      "versions": "1.21<*"
+    },
   },
   "socials": {
-    "website": "https://www.blockgermany.de"
+    "website": "https://www.blockgermany.de",
   },
   "assets": {
     "icon": "./icon.png",
     "background": "./bg.png"
-  }
+  },
 }
