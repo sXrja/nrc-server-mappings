@@ -8,7 +8,6 @@
   "categorys": [
     "MINIGAMES",
     "PVP",
-    "CITYBUILD",
     "SURVIVAL",
     "BEDWARS",
     "BUILD",
@@ -33,19 +32,19 @@
     },
     "swacrewgames": {
       "name": "SwacrewGames",
-      "versions": "1.19<*"
+      "versions": "1.21<*"
     },
     "target": {
       "name": "Target",
-      "versions": "1.19<*"
+      "versions": "1.21<*"
     },
     "kitffa": {
       "name": "KitFFA",
-      "versions": "1.19<*"
+      "versions": "1.21<*"
     },
     "vorbau": {
       "name": "Vorbau",
-      "versions": "1.19<*"
+      "versions": "1.21<*"
     }
   },
   "socials": {
